@@ -15,5 +15,12 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
+  contacts.delete_if { |k,v| v == "Strawberry" }
+	  end
+	end
 
+	h = {'apple' => 'green', 'potato' => 'red', 'sun' => 'yellow',
+	     'katydid' => 'green' }
+	h.delete_value('green')
+	h                    
 end
